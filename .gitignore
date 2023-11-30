@@ -1,0 +1,4 @@
+dist/*
+pgk/*
+target/*
+node_modules
