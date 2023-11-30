@@ -3,15 +3,16 @@
 import('./pkg')
   .catch(console.error);
 
-import { add, draw_image } from './pkg';
+import { draw_image } from './pkg';
 
-function example1() {
-  console.log(`adding 1 en 2: ${add(1,2)}`)
+
+function drawBlue() {
+  draw_image(true)
 }
 
-function example2() {
-  draw_image()
+function drawNormal() {
+  draw_image(false)
 }
 
-window.example1 = example1;
-window.example2 = example2;
+window.drawBlue = drawBlue;
+window.drawNormal = drawNormal;
